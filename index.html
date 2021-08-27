@@ -1,19 +1,16 @@
-<?php
-$referrer = $_SERVER['HTTP_REFERER'];
-if (!preg_match("/main/index.html",$referrer)) {
-header('Location: file:///C:/Users/ssebb/Documents/Web%20Ari/ari_web/index.html');
-} ;
-?>
-<!DOCTYPE html5>
-<html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
         <title>MyPenguin</title>
         <!--<link rel="shortcut icon" type="image/x-icon" href="../ari_web/images/heart.png"/>-->
         <link href="index.css" rel="stylesheet" />
     </head>
     <body>
-        <script language="javascript">
+        <script>
             function Login(event)
             {                
                 var username = document.getElementById("user").value;
