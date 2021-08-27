@@ -1,0 +1,53 @@
+<?php
+$referrer = $_SERVER['HTTP_REFERER'];
+if (!preg_match("/main/index.html",$referrer)) {
+header('Location: file:///C:/Users/ssebb/Documents/Web%20Ari/ari_web/index.html');
+} ;
+?>
+<!DOCTYPE html5>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>MyPenguin</title>
+        <!--<link rel="shortcut icon" type="image/x-icon" href="../ari_web/images/heart.png"/>-->
+        <link href="index.css" rel="stylesheet" />
+    </head>
+    <body>
+        <script language="javascript">
+            function Login(event)
+            {                
+                var username = document.getElementById("user").value;
+                var password = document.getElementById("pass").value;
+                
+                if(username == "enana" && password == "26082020")
+                {
+                   window.location = "home.html";
+                }
+                else if(username != "enana" || password != "26082020")
+                {
+                    alert("¡Error!")        
+                }
+            }
+        </script>
+        <div class="entrar">
+            <div class="login-title">
+                <p>Iniciar sesión</p>
+            </div>
+            <form class="login">
+              <div class="field email">
+                <div class="input-area">
+                  <input type="text" name="userid" id="user" autocomplete="off" tabindex="-1" placeholder="Usuario...">
+                </div>
+              </div>
+              <div class="field password">
+                <div class="input-area">
+                  <input type="password" name="pswrd" id="pass" autocomplete="off" tabindex="-1" placeholder="Contraseña...">
+                </div>
+              </div>
+              <div class="div_btnIS">
+                  <input type="button" name="btn" id="btnIS" onclick="Login()" value="Iniciar sesión">
+              </div>
+            </form>
+        </div>
+    </body>
+</html>
