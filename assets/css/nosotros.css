@@ -85,7 +85,7 @@ h3
 
 .construction::after {
     content: "";
-    background-image: url(images/time-3435879_1920.jpg);
+    background-image: url(../images/time-3435879_1920.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.5;
