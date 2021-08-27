@@ -337,6 +337,11 @@ footer a, footer a:hover
         padding-bottom: 125px;
     }
     
+    .letter
+    {
+        padding: 50px;
+    }
+    
     #proximamente
     {
         width: 75%;
